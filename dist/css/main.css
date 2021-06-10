@@ -146,27 +146,22 @@
   height: 75px;
 }
 
+.greeting-cards__img--position--center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .greeting-cards__item {
   font-family: 'Kanit', sans-serif;
   font-size: 20px;
   color: #2c4755;
+  text-align: center;
 }
 
 .greeting-cards__item--font--weight {
   font-weight: 200;
   font-size: 15px;
-}
-
-.greeting-cards__item--position {
-  text-align: center;
-}
-
-.greeting-cards--position {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  height: 80px;
-  width: 80px;
 }
 
 .info {

@@ -193,25 +193,22 @@
     &__img{
         width: 75px;
         height: 75px;
+        &--position--center{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
     &__item{
         font-family: 'Kanit', sans-serif;
         font-size: 20px;
         color: rgb(44,71,85);
+        text-align: center;
         &--font--weight{
             font-weight: 200;
             font-size: 15px;
+           
         }
-        &--position{
-            text-align: center;
-        }
-    }
-    &--position{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        height: 80px;
-        width: 80px;
     }
 }
 .info{
