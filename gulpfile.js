@@ -13,7 +13,7 @@ let path={
     src:{
         html: sourse_folder + "/*.html",
         css: sourse_folder + "/scss/*.scss",
-        js: sourse_folder + "/js/",
+        js: sourse_folder + "/js/*.js",
         img: sourse_folder + "/img-icons/**/*.{jpg,png,svg,gif,ico,webp}",
         fonts: sourse_folder + "/fonts/*.ttf",
     },
@@ -74,7 +74,6 @@ function css() {
 
 function js(){
     return src(path.src.js)
-        .pipe(fileinclude())
         .pipe(dest(path.build.js))
         .pipe(browsersync.stream())
 }
