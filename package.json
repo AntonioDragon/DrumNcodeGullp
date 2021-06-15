@@ -1,11 +1,10 @@
 {
   "name": "project_gulp",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "start" : "gulp watch",
-    "build" : "gulp build"
+    "start": "gulp watch",
+    "build": "gulp build"
   },
   "author": "Antonio",
   "license": "ISC",
@@ -21,5 +20,14 @@
     "gulp-file-include": "^2.3.0",
     "gulp-group-css-media-queries": "^1.2.2",
     "gulp-sass": "^4.1.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AntonioDragon/DrumNcodeGullp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AntonioDragon/DrumNcodeGullp/issues"
+  },
+  "homepage": "https://github.com/AntonioDragon/DrumNcodeGullp#readme",
+  "description": ""
 }
