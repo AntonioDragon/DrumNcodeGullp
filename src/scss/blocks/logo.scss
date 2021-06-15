@@ -1,0 +1,15 @@
+.logo{
+    &__item{
+        color: #333;
+        font-family: 'Kanit', sans-serif;
+        font-size: 40px;
+        line-height: 0;
+        font-weight: 600;
+        text-decoration: none;
+
+        &--color{
+            color: rgb(14, 179, 162);
+            font-weight: 800;
+        }
+    }
+}

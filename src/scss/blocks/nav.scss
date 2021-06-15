@@ -1,0 +1,13 @@
+.nav{
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    list-style: none;
+    text-align: center;
+    background-color:rgb(44,71,85);
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+
+    &__list{
+        padding-left: 0px;
+    }
+}

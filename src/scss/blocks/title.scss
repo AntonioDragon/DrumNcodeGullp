@@ -1,0 +1,35 @@
+.title{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    &__head{
+        grid-area: 1 / 1 / 3 / 7;   
+        text-align: center;
+        padding-top: 10px;
+        &--muted{
+            font-family: 'Kanit', sans-serif;
+            font-weight: 800;
+            font-size: 100px;
+            line-height: 0px;
+            color: rgba(68, 68, 68, 0.2);
+            @media (max-width:450px) {
+                font-size: 60px;
+            }
+        }
+    }
+    &__subtitle{
+        grid-area: 2 / 2 / 3 / 6;
+        text-align: center;  
+        padding-top:10px;
+        &--active{
+            font-family: 'Kanit', sans-serif;
+            font-weight: 200;
+            font-size: 20px;
+            line-height: 0px;
+            color: rgb(68, 68, 68);
+            @media (max-width:450px) {
+                font-size: 13px;
+            }
+        }
+    }
+}

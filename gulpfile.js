@@ -12,7 +12,7 @@ let path={
     },
     src:{
         html: sourse_folder + "/*.html",
-        css: sourse_folder + "/scss/main.scss",
+        css: sourse_folder + "/scss/*.scss",
         js: sourse_folder + "/js/",
         img: sourse_folder + "/img-icons/**/*.{jpg,png,svg,gif,ico,webp}",
         fonts: sourse_folder + "/fonts/*.ttf",
@@ -97,8 +97,9 @@ function clean() {
 }
 
 
-
+//tusk параллельной сборки проекта 
 let build = gulp.series(clean,gulp.parallel(js, css, html, images));
+//tusk сборки,отслеживание проекта и создание сервера 
 let watch = gulp.parallel(build, watchFiles, browserSync);
 
 exports.images = images;

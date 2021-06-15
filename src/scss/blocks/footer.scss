@@ -1,0 +1,21 @@
+.footer{
+    display: block;
+    background-color: rgb(44,71,85);
+
+    &__info{
+        text-align: center;
+        font-family: 'Kanit', sans-serif;
+        font-weight: 200;
+        font-size: 14px;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        padding-top:20px;
+        margin: 0;
+    }
+    &--height{
+        height: 60px;
+    }
+    &--infoname{
+        color: rgb(14, 179, 162);
+    } 
+}

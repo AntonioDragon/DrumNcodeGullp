@@ -1,0 +1,92 @@
+.about{
+    &__block-text{
+        grid-area: 1 / 6 / 3 / 8;
+        @media (max-width:768px) {
+            padding-left: 30px;
+            grid-area: 1 / 1 / 3 / 3; 
+        }
+        @media (max-width:450px) {
+            padding-right: 30px;
+            grid-area: 1 / 1 / 2 / 5;
+        }
+    }
+    &__content{
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-rows: repeat(2, 0.5fr);
+        @media (max-width:768px) {
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+        }
+        @media (max-width:450px) {
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 1fr;
+        }
+    }
+    &__figure{
+        grid-area: 1 / 2 / 3 / 4;
+        display: block;
+        @media (max-width:768px) {
+            grid-area: 1 / 3 / 3 / 5; 
+        }
+    }
+    &__img{
+        height: 400px;
+        width: 400px;
+        @media (max-width:1024px) {
+            height: 200px;
+            width: 200px;
+        }
+        @media (max-width:450px) {
+            display: none;
+        }
+    }
+    &__text{
+        font-family: 'Kanit', sans-serif;     
+        color: rgb(68, 68, 68);
+
+        &--font--size-main{
+            font-size: 20px;
+            font-weight: 500;
+            @media (max-width:768px) {
+                font-size: 17px;
+            }
+        }
+        &--font--size-secondary{
+            font-size: 15px;
+            font-weight: 200;
+            @media (max-width:768px) {
+                font-size: 13px;
+            }
+        }
+        @media (max-width:768px) {
+            grid-area: 1 / 3 / 3 / 5;
+        }
+        @media (max-width:450px) {
+            grid-area: 1 / 1 / 2 / 5;
+        }
+    }
+    &__underline{
+        max-width: 170px;
+        margin: 0;
+        background-color:rgb(14, 179, 162); 
+        color: rgb(14, 179, 162); 
+        height: 2px;
+        width: 60%;
+    }
+    &--height{
+        height: 800px;
+        @media (max-width:1024px) {
+            height: 930px;
+        }
+        @media (max-width:768px) {
+            height: 600px;
+        }
+        @media (max-width:450px) {
+            height: 400px;
+        }
+        @media (max-width:320px) {
+            height: 420px;
+        }
+    }
+}

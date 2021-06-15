@@ -1,0 +1,16 @@
+.portfolio{
+    background-color: rgb(240,240,240); 
+
+    &--size{
+        height: 800px;
+        @media (max-width:1024px) {
+            height: 1600px;
+        }
+        @media (max-width:768px) {
+            height: 1520px;
+        }
+        @media (max-width:450px) {
+            height: 1300px;
+        }
+    }
+}

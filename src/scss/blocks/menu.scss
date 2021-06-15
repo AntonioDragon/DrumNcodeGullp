@@ -1,0 +1,13 @@
+.menu{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;  
+
+    &__logo{
+        grid-area: 1 / 2 / 2 / 3;
+        margin-top: 22px;
+    }
+    &--height{
+        height: 20px;
+    }
+}

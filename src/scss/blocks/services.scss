@@ -1,0 +1,109 @@
+.services{
+    &__block-card{
+        grid-area: 1 / 3 / 5 / 9; 
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        @media (max-width:1024px) {
+            grid-area: 1 / 1 / 3 / 3;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(8, 1fr);
+        }
+    }
+    &__block-card-figure{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        height: 400px ;
+        @media (max-width:1024px) {
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            height: 800px ;
+        }
+        @media (max-width:450px) {
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+        }
+    }
+    &__block-text{
+        padding-left: 20px;
+        text-align: left;
+        font-family: 'Kanit', sans-serif;
+        font-size: 15px;
+        line-height: 22px;
+        color: rgb(68, 68, 68);
+        &--position{
+            grid-area: 1 / 2 / 2 / 4; 
+        }
+
+    }
+    &__card{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+
+        &--grid--pos-one{
+            grid-area: 1 / 1 / 3 / 4;
+            @media (max-width:1024px) {
+                grid-area: 1 / 1 / 3 / 2;
+            }
+        }
+        &--grid--pos-two{
+            grid-area: 1 / 4 / 3 / 7;
+            @media (max-width:1024px) {
+                grid-area: 3 / 1 / 5 / 2;
+            }
+        }
+        &--grid--pos-three{
+            grid-area: 3 / 1 / 5 / 4; 
+            @media (max-width:1024px) {
+                grid-area: 5 / 1 / 7 / 2; 
+            }
+        }
+        &--grid--pos-four{
+            grid-area: 3 / 4 / 5 / 7;
+            @media (max-width:1024px) {
+                grid-area: 7 / 1 / 9 / 2; 
+            }
+        }
+        @media (max-width:1024px) {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(8, 1fr);
+        }   
+    }
+    &__card-img{
+        padding-left: 25px;
+        &--position{
+            grid-area: 1 / 1 / 2 / 2; 
+        }
+    }
+
+    &__content{
+        margin-top: 0px;
+        font-weight: 200;
+    }
+    &__head{
+        margin-top: 0;
+    }
+    &__figures{
+        grid-area: 1 / 9 / 5 / 11;
+        height: 350px;
+        width: 300px;
+        @media (max-width:1024px) {
+            grid-area: 1 / 3 / 3 / 5;
+        }
+        @media (max-width:768px) {
+            height: 300px;
+            width: 200px;
+        }
+        @media (max-width:450px) {
+            display: none;
+        }
+    }
+    &__head{
+        font-weight: 800;
+    }
+    &__img{
+        color: rgb(14, 179, 162);
+    }
+}
